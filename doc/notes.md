@@ -14,9 +14,13 @@
 
 ## Introduction JavaScript
 
+[Lien JS](https://fr.javascript.info)
+
 - Appris les différentes manières de déclaration de variables : let & var
 - alert pour afficher du texte
 - avoir la type d'une variable = typeof (variable)
 - conversions, syntaxe = typeConversion(variable)
 - '+' sur une variable la convertit en numero
 - '?' permet d'avoir une valeur qui dépend de plusieurs conditions
+- '!!' permet de convertir en boolean(lors d'une utilisation de NOT)
+- au lieu d'écrire return n, on peut faire var fonction = (param1,param2) '=>' a + b
