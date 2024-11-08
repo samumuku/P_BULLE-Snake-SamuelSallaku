@@ -11,6 +11,7 @@
 - Exemple description : [45] [Done]
 - Question à se poser pour nommer un commit : "Qu'est ce que j'ai fait pour arriver au résultat?" donc, quoi(sur quoi): qu'est ce qui est fait
 - Description des commits (Journal de travail) : [temps] [WIP ou bien DONE]
+- La structure du repo GitHub, dossiers et fichiers en miniscule
 
 ## Introduction JavaScript
 
@@ -24,3 +25,20 @@
 - '?' permet d'avoir une valeur qui dépend de plusieurs conditions
 - '!!' permet de convertir en boolean(lors d'une utilisation de NOT)
 - au lieu d'écrire return n, on peut faire var fonction = (param1,param2) '=>' a + b
+- constructeur d'objet : "let user = new Object(); // syntaxe "constructeur d'objet"
+  - "let user = {}; // syntaxe "littéral objet"
+  - effacer une propriété avec delete : delete user.age
+  - propriété doit se terminer avec une virgule pour chaque ligne
+- pour les propriétés multi-mots , la syntaxe pour changer la valeur est : user["likes birds"] = true;
+- différentes manières de changer la valeur des propriétés d'un objet
+- test d'existence utilisant 'in' exemple: alert("samuel" in name);
+- boucle for.. in, les clés sont les "name", "age", "isAdmin" dans un objet par exemple
+  - si on fait un alert(user[clé]); dans le for.. in, alors cela va afficher les valeurs dans l'ordre
+  - mais les propriétés non-entiers, sont listés dans l'ordre de créations
+  - dont il suffit d' ajouter un '+' devant le "clé" quand on utilise la boucle for.. in
+
+### Arrêt à [Dernière page](https://fr.javascript.info/object-copy)
+
+## Ce que je pense faire la semaine prochaine
+
+- Je pense continuer à apprendre sur le site, en approfondir les connaissances acquises aujourd'hui
