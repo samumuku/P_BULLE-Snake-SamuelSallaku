@@ -19,12 +19,15 @@ export function generateFood(box, canvas) {
   const context = canvas.getContext("2d");
 
   context.beginPath();
+  context.strokeStyle = "black";
+  context.lineWidth = 5;
   context.strokeRect(x, y, rectWidth, rectHeight);
   context.fillStyle = "red";
+  context.fillRect(x, y, rectWidth, rectHeight);
   context.fill();
-  context.lineWidth = 5;
-  context.strokeStyle = "#003300";
   context.stroke();
+
+  return x, y;
 }
 
 /**

@@ -54,7 +54,7 @@
 
 ## Ce que j'ai appris
 
-- Méthode abrégée dans un objET
+- Méthode abrégée dans un objet
 
 ```javascript
 user = {
