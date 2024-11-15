@@ -42,3 +42,5 @@
 ## Ce que je pense faire la semaine prochaine
 
 - Je pense continuer à apprendre sur le site, en approfondir les connaissances acquises aujourd'hui
+
+# 15.11.2024
