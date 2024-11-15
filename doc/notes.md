@@ -44,3 +44,26 @@
 - Je pense continuer à apprendre sur le site, en approfondir les connaissances acquises aujourd'hui
 
 # 15.11.2024
+
+## Installation Node JS
+
+- Explications du prof par rapport au fichiers de base de projet Snake
+- Installation et commandes pour Node JS
+- npm i, puis npm run dev
+- Différents fichiers sur le repo(gitignore pour les fichiers à ignorer, packages, vite.config.js, etc.)
+
+## Ce que j'ai appris
+
+- Méthode abrégée dans un objET
+
+```javascript
+user = {
+  sayHi() {
+    // identique à "sayHi: function(){...}"
+    alert("Hello");
+  },
+};
+```
+
+- utiliser .this pour accéder à l'objet voulu
+- types Symbole (unique)
