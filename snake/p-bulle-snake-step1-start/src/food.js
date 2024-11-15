@@ -10,14 +10,17 @@
  * @returns {{x: number, y: number}} - Un objet contenant les coordonnées `x` et `y` de la nourriture générée.
  */
 export function generateFood(box, canvas) {
-  let x = Math.random();
-  let y = Math.random();
+  let rectWidth = 20;
+  let rectHeight = 20;
+  let min = 1;
+  let max = 400 - rectWidth;
+  let x = Math.floor(Math.random() * (max - min + 1)) + min;
+  let y = Math.floor(Math.random() * (max - min + 1)) + min;
   const context = canvas.getContext("2d");
 
-  const radius = 50;
   context.beginPath();
-  context.arc(x, y, radius, 0, 2 * Math.PI, false);
-  context.fillStyle = "green";
+  context.strokeRect(x, y, rectWidth, rectHeight);
+  context.fillStyle = "red";
   context.fill();
   context.lineWidth = 5;
   context.strokeStyle = "#003300";
