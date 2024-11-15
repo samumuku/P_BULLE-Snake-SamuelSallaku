@@ -67,3 +67,4 @@ user = {
 
 - utiliser .this pour accéder à l'objet voulu
 - types Symbole (unique)
+- Utilisation du canvas, puis les méthodes pour créer des rectangles (.strokeRect, .fillRect, .fill(), etc.)

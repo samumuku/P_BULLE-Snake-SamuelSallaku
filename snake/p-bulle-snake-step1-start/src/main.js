@@ -27,7 +27,7 @@ function startGame() {
 }
 
 function draw() {
-  // A compléter
+  drawSnake(ctx, snake, box);
 }
 
 startGame();

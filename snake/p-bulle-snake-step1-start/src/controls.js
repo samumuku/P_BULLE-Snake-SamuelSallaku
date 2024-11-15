@@ -11,23 +11,17 @@
  * @returns {string} - La nouvelle direction du serpent après traitement, ou la direction actuelle si le changement n'est pas valide.
  */
 export function handleDirectionChange(event, currentDirection) {
-  switch (currentDirection) {
-    case "UP":
-      y--;
-      break;
+  let nextDirection;
 
-    case "DOWN":
-      y++;
-      break;
-
-    case "LEFT":
-      x--;
-      break;
-
-    case "RIGHT":
-      x++;
-      break;
+  if (event.code == "ArrowLeft") {
+    nextDirection == "LEFT";
+  } else if (event.code == "ArrowUp") {
+    nextDirection == "UP";
+  } else if (event.code == "ArrowRight") {
+    nextDirection == "RIGHT";
+  } else if (event.code == "ArrowDown") {
+    nextDirection == "DOWN";
   }
 
-  return currentDirection;
+  return direction;
 }
