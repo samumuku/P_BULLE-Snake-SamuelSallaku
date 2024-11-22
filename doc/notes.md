@@ -90,3 +90,5 @@ user = {
   - [duree] [statut] [correction(date)]
 - Utilisation du deboggeur, "debugger" au moment où on veut que le programme s'arrête.
 - Ne pas mettre des valeurs au hasard dans les méthodes , comme par exemple la position x ou y du snake
+- Modèle et Vue lors du développement d'un jeu, 2 choses différentes
+- Pour le snake, il faut faire un tableau avec les objets(corps du snake) qui vont donc s'ajouter chaque fois une pomme est mangée.

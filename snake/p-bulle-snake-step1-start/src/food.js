@@ -11,10 +11,9 @@
  */
 export function generateFood(box, canvas) {
   let min = 0;
-  let max = 400 - box;
+  let max = canvas.clientWidth - box;
   let x = Math.floor(Math.random() * (max - min + 1)) + min;
   let y = Math.floor(Math.random() * (max - min + 1)) + min;
-  const context = canvas.getContext("2d");
 
   return { x: x, y: y };
 }
@@ -31,7 +30,6 @@ export function generateFood(box, canvas) {
  * @param {number} box - La taille d'une case de la grille en pixels, utilisée pour déterminer la taille de la nourriture.
  */
 export function drawFood(ctx, food, box) {
-  debugger;
   ctx.beginPath();
   ctx.strokeStyle = "black";
   ctx.lineWidth = 2;
