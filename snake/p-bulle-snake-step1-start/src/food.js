@@ -10,10 +10,8 @@
  * @returns {{x: number, y: number}} - Un objet contenant les coordonnées `x` et `y` de la nourriture générée.
  */
 export function generateFood(box, canvas) {
-  let min = 0;
-  let max = canvas.clientWidth - box;
-  let x = Math.floor(Math.random() * (max - min + 1)) + min;
-  let y = Math.floor(Math.random() * (max - min + 1)) + min;
+  let x = Math.floor(Math.random() * canvas.clientWidth) / box;
+  let y = Math.floor(Math.random() * canvas.clientHeight) / box;
 
   return { x: x, y: y };
 }
