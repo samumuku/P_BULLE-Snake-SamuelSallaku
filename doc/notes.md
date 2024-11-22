@@ -89,3 +89,4 @@ user = {
 - Nouvelle manière d'écrire dans la description des commits :
   - [duree] [statut] [correction(date)]
 - Utilisation du deboggeur, "debugger" au moment où on veut que le programme s'arrête.
+- Ne pas mettre des valeurs au hasard dans les méthodes , comme par exemple la position x ou y du snake
