@@ -68,3 +68,24 @@ user = {
 - utiliser .this pour accéder à l'objet voulu
 - types Symbole (unique)
 - Utilisation du canvas, puis les méthodes pour créer des rectangles (.strokeRect, .fillRect, .fill(), etc.)
+
+# 22.11.2024
+
+## Administratifs
+
+- Explications par rapport au .config.js
+- Génération de token
+- Journal de travail
+- Points JSP
+- Daily Scrum -> fixer des buts(petits buts)
+
+## Ce que je pense faire
+
+- Je pense faire bouger le snake, qu'il aie dans une direction quand les touches flèches sont tapées
+- Faire en sorte que la nourriture disparait après que le snake l'ait touché puis refaire apparaître un nouveau
+
+## Ce que j'ai appris
+
+- Nouvelle manière d'écrire dans la description des commits :
+  - [duree] [statut] [correction(date)]
+- Utilisation du deboggeur, "debugger" au moment où on veut que le programme s'arrête.

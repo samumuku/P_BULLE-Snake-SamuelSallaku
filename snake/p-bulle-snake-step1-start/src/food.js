@@ -10,24 +10,13 @@
  * @returns {{x: number, y: number}} - Un objet contenant les coordonnées `x` et `y` de la nourriture générée.
  */
 export function generateFood(box, canvas) {
-  let rectWidth = 20;
-  let rectHeight = 20;
-  let min = 1;
-  let max = 400 - rectWidth;
+  let min = 0;
+  let max = 400 - box;
   let x = Math.floor(Math.random() * (max - min + 1)) + min;
   let y = Math.floor(Math.random() * (max - min + 1)) + min;
   const context = canvas.getContext("2d");
 
-  context.beginPath();
-  context.strokeStyle = "black";
-  context.lineWidth = 5;
-  context.strokeRect(x, y, rectWidth, rectHeight);
-  context.fillStyle = "red";
-  context.fillRect(x, y, rectWidth, rectHeight);
-  context.fill();
-  context.stroke();
-
-  return x, y;
+  return { x: x, y: y };
 }
 
 /**
@@ -41,6 +30,14 @@ export function generateFood(box, canvas) {
  * @param {{x: number, y: number}} food - Un objet contenant les coordonnées `x` et `y` où la nourriture doit être dessinée.
  * @param {number} box - La taille d'une case de la grille en pixels, utilisée pour déterminer la taille de la nourriture.
  */
-export function drawFood() {
-  // A compléter
+export function drawFood(ctx, food, box) {
+  debugger;
+  ctx.beginPath();
+  ctx.strokeStyle = "black";
+  ctx.lineWidth = 2;
+  ctx.strokeRect(food.x, food.y, box, box);
+  ctx.fillStyle = "red";
+  ctx.fillRect(food.x, food.y, box, box);
+  ctx.fill();
+  ctx.stroke();
 }

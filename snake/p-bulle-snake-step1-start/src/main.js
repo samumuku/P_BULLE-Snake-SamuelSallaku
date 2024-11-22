@@ -22,12 +22,14 @@ document.addEventListener("keydown", (event) => {
 function startGame() {
   snake = initSnake();
   food = generateFood(box, canvas);
-
   gameInterval = setInterval(draw, gameSpeed); // Stockage de l'identifiant de l'intervalle
 }
 
 function draw() {
+  ctx.clearRect(0, 0, canvas.clientWidth, canvas.clientHeight);
+  snake = moveSnake(snake, direction, box);
   drawSnake(ctx, snake, box);
+  drawFood(ctx, food, box);
 }
 
 startGame();
