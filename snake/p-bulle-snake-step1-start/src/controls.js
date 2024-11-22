@@ -12,13 +12,13 @@
  */
 export function handleDirectionChange(event, currentDirection) {
   if (event.code == "ArrowLeft") {
-    return currentDirection == "LEFT";
+    return "LEFT";
   } else if (event.code == "ArrowUp") {
-    return currentDirection == "UP";
+    return "UP";
   } else if (event.code == "ArrowRight") {
-    return currentDirection == "RIGHT";
+    return "RIGHT";
   } else if (event.code == "ArrowDown") {
-    return currentDirection == "DOWN";
+    return "DOWN";
   }
 
   return currentDirection;
