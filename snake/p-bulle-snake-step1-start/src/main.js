@@ -26,16 +26,27 @@ function startGame() {
 }
 
 function draw() {
-  let snakeHead = snake[0];
   ctx.clearRect(0, 0, canvas.clientWidth, canvas.clientHeight);
   snake = moveSnake(snake, direction, box);
-  drawSnake(ctx, snake, box);
-  drawFood(ctx, food, box);
+  let snakeHead = snake[0];
+
+  if (
+    checkCollision(snakeHead, snake.slice(1)) ||
+    checkWallCollision(snakeHead, canvas, box)
+  ) {
+    clearInterval(gameInterval);
+    alert("Game Over");
+    return;
+  }
 
   if (snakeHead.x == food.x && snakeHead.y == food.y) {
     food = generateFood(box, canvas);
     drawSnake(ctx, snake, box);
+    snake.push(snakeHead);
   }
+
+  drawSnake(ctx, snake, box);
+  drawFood(ctx, food, box);
 }
 
 startGame();

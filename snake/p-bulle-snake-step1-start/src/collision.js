@@ -11,7 +11,12 @@
  * @returns {boolean} - Retourne `true` si la tête du serpent entre en collision avec un segment de son corps, sinon `false`.
  */
 export function checkCollision(head, snakeArray) {
-  // A compléter
+  for (let i = 0; i < snakeArray.length; i++) {
+    if (head.x === snakeArray[i].x && head.y === snakeArray[i].y) {
+      return true;
+    }
+  }
+  return false;
 }
 
 /**
@@ -28,5 +33,13 @@ export function checkCollision(head, snakeArray) {
  * @returns {boolean} - Retourne `true` si la tête du serpent entre en collision avec un mur, sinon `false`.
  */
 export function checkWallCollision(head, canvas, box) {
-  // A compléter
+  if (
+    head.x < 0 ||
+    head.x >= canvas.width ||
+    head.y < 0 ||
+    head.y >= canvas.height
+  ) {
+    return true;
+  }
+  return false;
 }

@@ -58,7 +58,15 @@ export function moveSnake(snake, direction, box) {
  */
 export function drawSnake(ctx, snake, box) {
   for (let i = 0; i < snake.length; i++) {
-    ctx.fillStyle = "green";
+    ctx.fillStyle = "lightgreen";
+    ctx.strokeStyle = "white";
     ctx.fillRect(snake[i].x, snake[i].y, box, box);
+    ctx.strokeRect(snake[i].x, snake[i].y, box, box);
+  }
+  if (snake.length > 0) {
+    ctx.fillStyle = "green";
+    ctx.strokeStyle = "white";
+    ctx.fillRect(snake[0].x, snake[0].y, box, box);
+    ctx.strokeRect(snake[0].x, snake[0].y, box, box);
   }
 }

@@ -106,3 +106,9 @@ user = {
 - Absent
 
 # 20.12.2024
+
+## Ce que j'ai fais
+
+- J'ai réussi à faire placer la pomme dans des box de 20 pixels au hasard
+- J'ai réussi à faire en sorte que le snake puisse manger la pomme, et qu'elle disparaisse et reapparaisse quelque part d'autre
+- J'ai réussi à différencier le corps avec la tête, en ajoutant de différentes couleurs
