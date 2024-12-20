@@ -92,3 +92,17 @@ user = {
 - Ne pas mettre des valeurs au hasard dans les méthodes , comme par exemple la position x ou y du snake
 - Modèle et Vue lors du développement d'un jeu, 2 choses différentes
 - Pour le snake, il faut faire un tableau avec les objets(corps du snake) qui vont donc s'ajouter chaque fois une pomme est mangée.
+
+# 29.11.2024
+
+- Absent
+
+# 06.12.2024
+
+- Présent mais, préparation des PO donc pas pu avancer
+
+# 13.12.2024
+
+- Absent
+
+# 20.12.2024

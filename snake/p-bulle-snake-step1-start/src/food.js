@@ -10,8 +10,8 @@
  * @returns {{x: number, y: number}} - Un objet contenant les coordonnées `x` et `y` de la nourriture générée.
  */
 export function generateFood(box, canvas) {
-  let x = Math.floor(Math.random() * canvas.clientWidth) / box;
-  let y = Math.floor(Math.random() * canvas.clientHeight) / box;
+  let x = Math.floor(Math.random() * (canvas.clientWidth / box)) * box;
+  let y = Math.floor(Math.random() * (canvas.clientHeight / box)) * box;
 
   return { x: x, y: y };
 }
@@ -29,9 +29,6 @@ export function generateFood(box, canvas) {
  */
 export function drawFood(ctx, food, box) {
   ctx.beginPath();
-  ctx.strokeStyle = "black";
-  ctx.lineWidth = 2;
-  ctx.strokeRect(food.x, food.y, box, box);
   ctx.fillStyle = "red";
   ctx.fillRect(food.x, food.y, box, box);
   ctx.fill();
