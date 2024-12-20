@@ -26,10 +26,16 @@ function startGame() {
 }
 
 function draw() {
+  let snakeHead = snake[0];
   ctx.clearRect(0, 0, canvas.clientWidth, canvas.clientHeight);
   snake = moveSnake(snake, direction, box);
   drawSnake(ctx, snake, box);
   drawFood(ctx, food, box);
+
+  if (snakeHead.x == food.x && snakeHead.y == food.y) {
+    food = generateFood(box, canvas);
+    drawSnake(ctx, snake, box);
+  }
 }
 
 startGame();
