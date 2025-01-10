@@ -33,4 +33,6 @@ export function drawFood(ctx, food, box) {
   ctx.fillRect(food.x, food.y, box, box);
   ctx.fill();
   ctx.stroke();
+  ctx.strokeStyle = "white";
+  ctx.strokeRect(food.x, food.y, box, box);
 }

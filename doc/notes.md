@@ -113,3 +113,14 @@ user = {
 - J'ai réussi à faire en sorte que le snake puisse manger la pomme, et qu'elle disparaisse et reapparaisse quelque part d'autre
 - J'ai réussi à différencier le corps avec la tête, en ajoutant de différentes couleurs
 - J'ai réussi à faire les collisions entre le snake et son corps, puis les murs du jeu
+
+# 10.01.2025
+
+## Ce que je pense faire
+
+- Finir le score puis ajouter un timer au jeu
+- Finaliser et rendre le projet à la fin de l'après-midi
+
+## Ce que j'ai fais / ou bien appris
+
+- .innerHTML / .innerText en JS, va appliquer le JS à cet endroit là dans l'HTML

@@ -43,10 +43,12 @@ function draw() {
     food = generateFood(box, canvas);
     drawSnake(ctx, snake, box);
     snake.push(snakeHead);
+    score++;
   }
 
   drawSnake(ctx, snake, box);
   drawFood(ctx, food, box);
+  drawScore(ctx, score);
 }
 
 startGame();
