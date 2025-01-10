@@ -12,7 +12,9 @@
  */
 export function checkCollision(head, snakeArray) {
   for (let i = 0; i < snakeArray.length; i++) {
+    // Boucle sur tous les segments du serpent
     if (head.x == snakeArray[i].x && head.y == snakeArray[i].y) {
+      // Vérifie si la tête du serpent est en collision avec un segment
       return true;
     }
   }
@@ -34,6 +36,7 @@ export function checkCollision(head, snakeArray) {
  */
 export function checkWallCollision(head, canvas, box) {
   if (
+    // Vérifie si la tête du serpent est en dehors des limites du canvas
     head.x < 0 ||
     head.x >= canvas.width ||
     head.y < 0 ||

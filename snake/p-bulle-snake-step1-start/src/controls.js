@@ -12,13 +12,13 @@
  */
 export function handleDirectionChange(event, currentDirection) {
   if (event.code == "ArrowLeft") {
-    return "LEFT";
+    return "LEFT"; // Retourne la nouvelle direction si la touche pressée est "ArrowLeft"
   } else if (event.code == "ArrowUp") {
-    return "UP";
+    return "UP"; // Retourne la nouvelle direction si la touche pressée est "ArrowUp"
   } else if (event.code == "ArrowRight") {
-    return "RIGHT";
+    return "RIGHT"; // Retourne la nouvelle direction si la touche pressée est "ArrowRight"
   } else if (event.code == "ArrowDown") {
-    return "DOWN";
+    return "DOWN"; // Retourne la nouvelle direction si la touche pressée est "ArrowDown"
   }
 
   return currentDirection;

@@ -23,8 +23,9 @@ export function initSnake() {
  * @returns {{x: number, y: number}} - Un objet représentant les nouvelles coordonnées `x` et `y` de la tête du serpent après le déplacement.
  */
 export function moveSnake(snake, direction, box) {
-  let newHeadSpawn = { x: snake[0].x, y: snake[0].y };
+  let newHeadSpawn = { x: snake[0].x, y: snake[0].y }; // Initialise la nouvelle position de la tête du serpent
 
+  // Déplace la tête du serpent en fonction de la direction
   switch (direction) {
     case "LEFT":
       newHeadSpawn.x -= box;
@@ -39,8 +40,8 @@ export function moveSnake(snake, direction, box) {
       newHeadSpawn.y += box;
       break;
   }
-  snake.unshift(newHeadSpawn);
-  snake.pop();
+  snake.unshift(newHeadSpawn); // Ajoute la nouvelle position de la tête du serpent au début du tableau
+  snake.pop(); // Supprime le dernier segment du serpent pour le déplacer
   return snake;
 }
 
@@ -57,6 +58,7 @@ export function moveSnake(snake, direction, box) {
  * @param {number} box - La taille d'une case de la grille en pixels, utilisée pour déterminer la taille de chaque segment du serpent.
  */
 export function drawSnake(ctx, snake, box) {
+  // Dessine chaque segment du serpent
   for (let i = 0; i < snake.length; i++) {
     ctx.fillStyle = "lightgreen";
     ctx.strokeStyle = "white";
@@ -64,6 +66,7 @@ export function drawSnake(ctx, snake, box) {
     ctx.strokeRect(snake[i].x, snake[i].y, box, box);
   }
   if (snake.length > 0) {
+    // Vérifie si le serpent a au moins un segment
     ctx.fillStyle = "green";
     ctx.strokeStyle = "white";
     ctx.fillRect(snake[0].x, snake[0].y, box, box);

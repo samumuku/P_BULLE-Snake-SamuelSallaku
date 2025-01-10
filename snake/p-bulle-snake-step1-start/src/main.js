@@ -58,25 +58,27 @@ function draw() {
   let snakeHead = snake[0];
 
   if (
+    // Vérification des collisions
     checkCollision(snakeHead, snake.slice(1)) ||
     checkWallCollision(snakeHead, canvas, box)
   ) {
+    // Arrêt du jeu en cas de collision
     clearInterval(gameInterval);
     alert("Game Over");
     snake.x = 0;
     snake.y = 0;
     return;
   }
-
+  // Vérification de la collision entre la tête du serpent et la nourriture
   if (snakeHead.x == food.x && snakeHead.y == food.y) {
     food = generateFood(box, canvas);
     snake.push(snakeHead);
     score++;
   }
 
-  drawSnake(ctx, snake, box);
-  drawFood(ctx, food, box);
-  drawScore(ctx, score);
+  drawSnake(ctx, snake, box); // Affichage du serpent
+  drawFood(ctx, food, box); // Affichage de la nourriture
+  drawScore(ctx, score); // Affichage du score
 }
 
 startGame();

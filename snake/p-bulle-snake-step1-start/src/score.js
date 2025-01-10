@@ -8,5 +8,5 @@
  * @param {number} score - Le score à afficher, qui est un entier.
  */
 export function drawScore(ctx, score) {
-  document.getElementById("divScore").innerText = "Score: " + score;
+  document.getElementById("divScore").innerText = "Score: " + score; // Affiche le score sur la page
 }
