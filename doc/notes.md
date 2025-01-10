@@ -124,3 +124,7 @@ user = {
 ## Ce que j'ai fais / ou bien appris
 
 - .innerHTML / .innerText en JS, va appliquer le JS à cet endroit là dans l'HTML
+- Utilisation de SetInterval, pour ajouter un timer
+- Ajout du bouton "restart" afin de recommencer le jeu dès qu'on a perdu
+
+# Fin du projet

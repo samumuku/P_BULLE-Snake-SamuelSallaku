@@ -26,11 +26,28 @@
         font-size: 24px;
         font-weight: bold;
       }
+      #divRestartButton {
+        font-family: "Borna", sans-serif;
+        font-size: 18px;
+        padding: 10px 20px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      #divRestartButton:hover {
+        background-color: gainsboro;
+        color: #45a049;
+      }
     </style>
   </head>
   <body>
     <div id="divScore"></div>
     <div id="divTime"></div>
+    <button id="divRestartButton">Restart</button>
     <canvas id="gameCanvas" width="400" height="400"></canvas>
     <script type="module" src="./src/main.js"></script>
   </body>
