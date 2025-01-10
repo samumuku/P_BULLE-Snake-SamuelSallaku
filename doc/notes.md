@@ -126,5 +126,6 @@ user = {
 - .innerHTML / .innerText en JS, va appliquer le JS à cet endroit là dans l'HTML
 - Utilisation de SetInterval, pour ajouter un timer
 - Ajout du bouton "restart" afin de recommencer le jeu dès qu'on a perdu
+- Questions du prof
 
 # Fin du projet
