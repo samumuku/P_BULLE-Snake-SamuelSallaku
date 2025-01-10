@@ -12,7 +12,7 @@
  */
 export function checkCollision(head, snakeArray) {
   for (let i = 0; i < snakeArray.length; i++) {
-    if (head.x === snakeArray[i].x && head.y === snakeArray[i].y) {
+    if (head.x == snakeArray[i].x && head.y == snakeArray[i].y) {
       return true;
     }
   }

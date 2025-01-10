@@ -19,6 +19,14 @@ document.addEventListener("keydown", (event) => {
   direction = handleDirectionChange(event, direction);
 });
 
+function startTimer() {
+  let time = 0;
+  setInterval(time, 1000);
+  document.getElementById("divTime").innerHTML = "Time : " + time;
+}
+
+function restart() {}
+
 function startGame() {
   snake = initSnake();
   food = generateFood(box, canvas);
@@ -45,10 +53,10 @@ function draw() {
     snake.push(snakeHead);
     score++;
   }
-
   drawSnake(ctx, snake, box);
   drawFood(ctx, food, box);
   drawScore(ctx, score);
+  startTimer();
 }
 
 startGame();
